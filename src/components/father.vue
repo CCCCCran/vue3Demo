@@ -9,12 +9,15 @@
         <div class="header">
             <TimeModel></TimeModel>
         </div>
+        <FatherTransferValue></FatherTransferValue>
     </div>
 </template>
 <script lang="ts">
 import { ref } from "vue";
 import { useRouter,useRoute } from "vue-router";
 import TimeModel from "./timeModel.vue";
+import fatherTransferValue from "./fatherTransferValue.vue";
+import FatherTransferValue from "./fatherTransferValue.vue";
 export default {
     setup() {
         const router = useRouter();
@@ -36,7 +39,7 @@ export default {
             push,
         };
     },
-    components: { TimeModel }
+    components: { TimeModel, FatherTransferValue }
 }
 </script>
 <style>

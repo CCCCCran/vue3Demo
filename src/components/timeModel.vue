@@ -7,7 +7,6 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { objectPick } from "@vueuse/shared";
 import { reactive,onMounted } from "vue";
 import { FormatsEnum,dateFormat } from '../uitls/tool'
     // 定义模型
