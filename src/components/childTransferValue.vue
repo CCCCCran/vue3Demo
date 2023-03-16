@@ -6,7 +6,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import { defineProps,defineEmits } from 'vue';
+import { defineEmits } from 'vue';
     const value = defineProps({
         msg:{
             default:'',
@@ -20,6 +20,6 @@ import { defineProps,defineEmits } from 'vue';
         emit('postMessage',123)
     }
 </script>
-<style lang="">
+<style lang="less">
     
 </style>
