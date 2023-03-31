@@ -12,7 +12,7 @@
 import { ref } from 'vue';
 import childTransferValue from './childTransferValue.vue';
 import hooktest from './hooktest.vue';
-const toChildvalue: any = ref('从父组件发过去的信息')
+const toChildvalue = ref('从父组件发过去的信息')
 
 const faval = ref(0)
 

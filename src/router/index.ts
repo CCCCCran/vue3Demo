@@ -5,14 +5,19 @@ import {createRouter,createWebHashHistory} from "vue-router";
 const routes = [
   { 
     name:'father',
-    path: '/', 
+    path: '/father', 
     component: () => import("../components/father.vue") 
   },
   {
     name:'son',
     path:'/son',
     component: () => import("../components/son.vue")
-  }
+  },
+  {
+    name:'home',
+    path:'/',
+    component: () => import("../view/showSelectComponent.vue")
+  },
 ]
 
 //创建路由实例并传递routes配置

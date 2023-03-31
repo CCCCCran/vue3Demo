@@ -10,6 +10,8 @@
             <TimeModel></TimeModel>
         </div>
         <FatherTransferValue></FatherTransferValue>
+        <div>-----------------------------------------------------------------</div>
+        <test></test>
     </div>
 </template>
 <script lang="ts">
@@ -17,6 +19,7 @@ import { ref } from "vue";
 import { useRouter,useRoute } from "vue-router";
 import TimeModel from "./timeModel.vue";
 import FatherTransferValue from "./fatherTransferValue.vue";
+import test from "./test.vue";
 export default {
     setup() {
         const router = useRouter();
@@ -38,10 +41,12 @@ export default {
             push,
         };
     },
-    components: { TimeModel, FatherTransferValue }
+    components: { TimeModel, FatherTransferValue,test }
 }
 </script>
 <style lang="less">
+//  定义一个变量来赋渐变色的值
+    @color:linear-gradient(rgb(175, 16, 16), rgb(172, 160, 160));
     .header {
 	position: relative;
 	box-sizing: border-box;
@@ -49,10 +54,11 @@ export default {
 	align-items: center;
 	width: 65%;
 	height: 96px;
-	padding: 0 48px;
+	// padding: 0 48px;
+    padding-left: 80px;
 	box-shadow: 0 2px 2px rgb(0 0 0 / 25%);
     background: black;
-    background-image: linear-gradient(black, rgb(172, 160, 160));
-    margin-left: 65px;
+    background-image: @color;
+    margin-left: 90px;
     }
 </style>
